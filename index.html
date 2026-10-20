@@ -379,7 +379,7 @@
 
             // 2. معادلة السائق (33% من الإيراد + مصاريفه)
             let driverBase = totalRev * 0.33; 
-            let driverTotalDues = driverBase + driverExp; // لو عايز تخليها "ناقص" غير الـ + لـ -
+            let driverTotalDues = driverBase - driverExp; // لو عايز تخليها "ناقص" غير الـ + لـ -
             
             // 3. المتبقي للشركاء
             let remainingForPartners = totalRev - carExp - driverTotalDues;
